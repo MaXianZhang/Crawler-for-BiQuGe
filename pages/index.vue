@@ -1,6 +1,5 @@
 <template >
   <div>
-    <Nav></Nav>
     <h1>
       {{mes}}
     </h1>
@@ -9,14 +8,14 @@
 </template>
 
 <script>
-import Nav from '~/templates/nav'
 
 export default {
+  layout: 'blog',
   components:{
-    Nav,
+
   },
   data: () => ({
-    mes: '首页'
+    mes: '风居住的地方，总有易逝的纸屑'
   }),
   render:(h) => {
     console.log(1)

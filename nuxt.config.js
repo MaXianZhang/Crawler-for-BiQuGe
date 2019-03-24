@@ -2,6 +2,7 @@
 
 module.exports = {
   plugins: [
-    '~/plugins/vue-markdown'
+    '~/plugins/vue-markdown',
+    '~/plugins/element-ui'
   ]
 }

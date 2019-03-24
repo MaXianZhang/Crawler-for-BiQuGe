@@ -1,6 +1,8 @@
 <template >
   <div>
-    <Nav></Nav>
+    <h1>
+      {{mes}}
+    </h1>
     <vue-markdown>
       # 这是一级标题
 ## 这是二级标题
@@ -11,21 +13,15 @@
 ***这是斜体加粗的文字***
 ~~这是加删除线的文字~~
     </vue-markdown>
-    <nuxt-link to="/blog/">Blog</nuxt-link>
-
-    <h1>
-      {{mes}}
-    </h1>
   </div>
 </template>
 
 <script>
-import Nav from '~/templates/nav'
 import VueMarkdown from 'vue-markdown'
 
 export default {
+  layout: 'blog',
   components:{
-    Nav,
     VueMarkdown
   },
   data: () => ({
