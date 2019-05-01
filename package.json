@@ -9,8 +9,11 @@
   },
   "scripts": {
     "dev": "nuxt",
-    "prod": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "prod": "nuxt build",
+    "generate": "nuxt generate",
+    "prod:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "git:page": "git subtree push --prefix=dist origin gh-pages"
   }
 }
