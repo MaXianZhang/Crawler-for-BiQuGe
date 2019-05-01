@@ -28,6 +28,15 @@
  * Released under the MIT License.
  */
 
+/*! https://mths.be/punycode v1.4.1 by @mathias */
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+
 /**
  * Checks if an event is supported in the current execution environment.
  *
@@ -41,13 +50,4 @@
  * @return {boolean} True if the event is supported.
  * @internal
  * @license Modernizr 3.0.0pre (Custom Build) | MIT
- */
-
-/*! https://mths.be/punycode v1.4.1 by @mathias */
-
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
- * @license  MIT
  */
