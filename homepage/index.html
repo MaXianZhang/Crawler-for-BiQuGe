@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>主页</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div class="one">
+				<a href="https://github.com/jasonshelby/jasonshelby.github.io/tree/master/backstage/login%20demo">github入口</a>
+			</div>
+		</nav>
+		
+	</header>
+
+	<main>
+		<article id="project">
+			<title>项目</title>
+
+			<div class="wrapper">
+				<ul id="project-content">
+          <div>
+            <span>老娘胖了</span>
+          </div>
+					<!-- <li>\
+						<figure class="p-head">\
+							<a href="' + url + '" class="simage" target="_blank">\
+								<img src="' + imageUrl + '">\
+								<div class="mask">' + infor + '</div>\
+							</a>\
+						</figure>\
+						<div class="p-body">\
+							<a href="' + url + '" class="simgtitle" target="_blank">' + infor + '</a>\ 
+							<span class="tag-list">' + url + '</span>\
+						</div>\
+					</li>\ -->
+				</ul>
+			</div>
+			
+		</article>
+	</main>
+
+
+	<footer>
+		<small>署名：张旭</small>
+		<small>微信：18846076271</small>
+		<small>邮箱：122230606@qq.com</small>
+	</footer>
+
+
+	<script type="text/javascript">
+		dataList = [
+			{
+				"id" : 0,
+				"url": "https://jasonshelby.github.io/扫雷",
+				"imageUrl": "./chi.jpg",
+				"tag": "javascript、Dom",
+				"infor": "扫雷"
+			},
+			{
+				"id" : 1,
+				"url": "https://jasonshelby.github.io/MySinger",
+				"imageUrl": "./chi.jpg",
+				"tag": "H5、sass、js",
+				"infor": "移动端音乐播放器"
+			},
+			{
+				"id" : 2,
+				"url": "https://jasonshelby.github.io/离线缓存项目",
+				"imageUrl": "./chi.jpg",
+				"tag": "MVC、LocalStorage、cache",
+				"infor": "离线缓存项目"
+			},
+			{
+				"id" : 3,
+				"url": "https://github.com/jasonshelby/jasonshelby.github.io/tree/master/backstage/login%20demo",
+				"imageUrl": "./chi.jpg",
+				"tag": "node",
+				"infor": "登录demo"
+			}
+
+		]
+
+		function insertUlHtml(data,elem){
+			const id = data.id;
+			const tag = data.tag;
+			const url = data.url;
+			const imageUrl = data.imageUrl;
+			const infor = data.infor;
+			console.log(infor);
+
+
+			elem.innerHTML += '<li>\
+				<figure class="p-head">\
+					<a href="' + url + '" class="simage" target="_blank">\
+						<img src="' + imageUrl + '">\
+						<div class="mask" style="display:none;">' + infor + '</div>\
+					</a>\
+				</figure>\
+				<div class="p-body">\
+					<a href="' + url + '" class="simgtitle" target="_blank">' + infor +'</a>\
+					</br>\
+					<span class="tag-list">' + tag + '</span>\
+				</div>\
+			</li>';
+		}
+
+
+		const proUl = document.getElementById('project-content');
+		for(let i = 0; i < dataList.length; i++) {
+			insertUlHtml(dataList[i],proUl);
+		}
+
+
+
+
+	</script>
+</body>
+</html>

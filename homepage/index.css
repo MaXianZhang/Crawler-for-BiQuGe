@@ -1,0 +1,127 @@
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	line-height: 19px;
+    font-size: 14px;
+    color: #d7d7d7;
+    /*float: left;*/
+}
+
+body{
+	background: #272727;
+	width: 100%;
+    /*background-image: url(http://www.doooor.com/template/iscwo_design_2013/img/images/DOOOOR_background-XXXXX.jpg)*/
+}
+
+header{
+	height: 50px;
+	background-color: black;
+    color: #cccccd;
+    /*position: fixed;*/
+    width: 100%;
+}
+
+nav{
+	width: 1280px;
+	margin: 0 auto;
+
+}
+
+nav .one{
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 15px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 5px;
+	transition: all 0.3s;
+}
+
+nav .one:hover{
+	background-color: #333333;
+	cursor:pointer;
+}
+nav .one a{
+	text-decoration: none;
+}
+
+main{
+	/*position: absolute;*/
+	width: 1280px;
+	margin: 50px auto 0px;
+
+}
+
+#project{
+	width: 100%;
+}
+
+#project title{
+	margin: 10px auto 20px 20px;
+}
+.wrapper{
+	width: 100%;
+
+}
+
+#project ul{
+
+}
+#project ul li {
+	display: inline-block;
+	width: 300px;
+	margin: 10px;
+	background: #333333;
+    border: none;
+    box-shadow: 0 1px 1px rgba(20,20,20,0.3);
+}
+
+#project ul li img{
+	width: 300px;
+	height: 214px;
+}
+
+#project #project-content .p-body{
+    height: 60px;
+    margin: 7px 9px;
+    clear: both;
+    width: 282px;
+}
+#project #project-content .p-body a{
+    overflow: hidden;
+    width: 242px;
+    height: 19px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-top: 13px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+	word-wrap: break-word;
+}
+
+#project #project-content .p-body .simgtitle{
+	height: 20px;
+	line-height: 30px;
+	text-decoration: none;
+}
+#project #project-content .p-body span{
+	float: right;
+	font-size: 10px;
+    color: #666666;
+}
+
+
+
+footer{
+	margin-top: 100px;
+	width: 100%;
+	text-align: center;
+
+}
+
+
+
+
+
+
